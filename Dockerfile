@@ -3,7 +3,7 @@ MAINTAINER Supachai Jaturaprom  "jaturaprom.su@gmail.com"
 
 ENV TZ Asia/Bangkok
 
-#Installation of nesesary package/software for this containers...
+# Update and Installation package 
  RUN apt-get update && echo $TZ > /etc/timezone && DEBIAN_FRONTEND=noninteractive apt-get install -yq apt-get install -yq mariadb-server \
 					mariadb-client php7.0 apache2 php7.0-mysql\
                     && apt-get clean \
